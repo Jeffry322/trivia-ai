@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CG3YQ5SE7Z1tYT1+mPVQ16ovRZ/L8j/fEVq+4cV3iVg=",
+  "Source": "Trivia.AI.ReverseProxy",
+  "BasePath": "_content/Trivia.AI.ReverseProxy",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

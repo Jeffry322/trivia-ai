@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  backend:
+    build:
+      context: "/home/jeffry/RiderProjects/Trivia.AI/backend/src/Trivia.AI.Web"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/Trivia.AI.Web.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "trivia.ai.web:dev"
+    ports: []
+    volumes:
+    - "/home/jeffry/RiderProjects/Trivia.AI/backend/src/Trivia.AI.Web:/app:rw"
+    - "/home/jeffry/RiderProjects/Trivia.AI/backend:/src:rw"
+    - "/home/jeffry/.nuget/packages:/root/.nuget/packages"
+    working_dir: "/app"
