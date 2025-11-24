@@ -1,0 +1,43 @@
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    profiles: ["app"]
+  
+  backend:
+    container_name: backend
+    build:
+      context: ./backend/src/Trivia.AI.Web
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    profiles: ["app"]
+    
+  gateway:
+    container_name: gateway
+    build:
+      context: ./backend/src/Trivia.AI.ReverseProxy
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    profiles: ["app"]
+    
+  database:
+    container_name: database
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "trivia"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "verysecurepassword"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    

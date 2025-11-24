@@ -1,4 +1,4 @@
-@Trivia.AI.Web_HostAddress = http://localhost:5041
+@Trivia.AI.Web_HostAddress = http://localhost:5031
 
 GET {{Trivia.AI.Web_HostAddress}}/weatherforecast/
 Accept: application/json
