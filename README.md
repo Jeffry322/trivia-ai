@@ -17,7 +17,7 @@ docker-compose --profile app down
 ```
   - To run only infrastructure do:
 ```
-docker-compose up -d --build
+docker-compose up -d
 ```
   - Teardown
 ```
