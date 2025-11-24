@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MX7zDI6y7Is=",
+  "success": true,
+  "projectFilePath": "/home/jeffry/RiderProjects/Trivia.AI/backend/src/Trivia.AI.Web/Trivia.AI.Web.csproj",
+  "expectedPackageFiles": [
+    "/home/jeffry/.nuget/packages/microsoft.aspnetcore.openapi/9.0.9/microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "/home/jeffry/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/home/jeffry/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
